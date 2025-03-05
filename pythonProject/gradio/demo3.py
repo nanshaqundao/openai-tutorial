@@ -14,9 +14,9 @@ def sepia(input_img):
 
 
 demo = gr.Interface(
-    sepia,
-    gr.Image(),
-    "image"
+    fn=sepia,
+    inputs=[gr.Image()],
+    outputs=["image"],
 )
 if __name__ == "__main__":
     demo.launch()
