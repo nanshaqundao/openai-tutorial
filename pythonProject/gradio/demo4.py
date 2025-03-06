@@ -20,6 +20,7 @@ demo = gr.Interface(
         "number"
     ],
     outputs="number",
+    live=True,
     examples=[
         [45, "add", 5],
         [3.14, "multiply", 2],
